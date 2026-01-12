@@ -1,42 +1,25 @@
-# 🚀 TechTonic
+# LastMile.AI — Handshake Example & Technical Write-up
 
-Welcome to **TechTonic** — a curated collection of full-stack experiments, backend blueprints, and creative code. Built for clarity, shared for curiosity.
+This repository contains a focused prototype and technical write-up for addressing the "last 10 meters" delivery problem in regions with informal or landmark-based addressing.
 
-## ✨ Features
+Highlights
+- docs/LastMile.AI-Technical-Writeup.md — Full technical write-up and architecture.
+- examples/handshake — Runnable handshake example (OSM mock, LLM mock, Jest tests).
+- Purpose: demonstrate a pragmatic deterministic + LLM pattern that verifies human landmarks against nearby spatial features and synthesizes rider-friendly instructions.
 
-- 🧠 Optimization algorithms and logic puzzles
-- 🛠️ RESTful API design and backend architecture
-- 🧰 Authentication, authorization, and session management
-- 🗃️ Database modeling and query optimization (SQL & NoSQL)
-- ⚙️ DevOps basics: CI/CD, Docker, and deployment pipelines
-- 🎨 Frontend demos and interactive utilities
-- 📚 Clean code with clear documentation
+Quick start (examples/handshake)
+1. cd examples/handshake
+2. npm install
+3. npm test
 
-## 🧱 Core Backend Concepts
+What to look for
+- HANDSHAKE function: combines coordinates + free-text landmark → verified | ambiguous | failed + evidence.
+- Deterministic checks first (OSM/local index), LLM only for disambiguation.
+- Evidence/provenance recorded for auditing.
 
-This repo explores and demonstrates:
+Contributing
+- Try the example with real or synthetic datasets and open issues with edge cases.
+- Replace the LLM mock with a real provider and the OSM mock with a spatial index for integration tests.
+- Suggestions and PRs welcome.
 
-- **API Design**: RESTful endpoints with versioning, pagination, and error handling
-- **Authentication & Authorization**: JWT, OAuth2, and role-based access control (RBAC)
-- **Database Integration**:
-  - SQL (PostgreSQL, SQLite) with schema migrations
-  - NoSQL (MongoDB) for flexible data modeling
-- **Caching Strategies**: Redis for performance boosts
-- **Background Jobs**: Task queues with Celery or BullMQ
-- **Testing**: Unit and integration tests with `pytest` or `Jest`
-- **Security**: Input validation, rate limiting, and secure headers
-- **Deployment**: Dockerized services, GitHub Actions, and cloud deployment (Render, Railway, or Vercel)
-
-## 📦 Tech Stack
-
-- **Frontend**: HTML, CSS, JavaScript (Vanilla + React)
-- **Backend**: Python (FastAPI, Flask), Node.js (Express)
-- **Database**: PostgreSQL, MongoDB
-- **DevOps**: Docker, GitHub Actions, Nginx
-- **Tools**: VS Code, Postman, Insomnia, Swagger UI
-
-## 🚀 Getting Started
-
-```bash
-git clone https://github.com/yourusername/TechTonic.git
-cd TechTonic
+License: MIT
