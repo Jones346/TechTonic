@@ -1,0 +1,29 @@
+[
+  {
+    "id": "osm-1",
+    "name": "Mama Amina Kiosk",
+    "tags": { "shop": "kiosk" },
+    "description": "small kiosk with blue sign",
+    "lat": -1.2921,
+    "lon": 36.8219,
+    "distance": 12
+  },
+  {
+    "id": "osm-2",
+    "name": "Fuel Station",
+    "tags": { "amenity": "fuel" },
+    "description": "Fuel station with canopy",
+    "lat": -1.2922,
+    "lon": 36.8221,
+    "distance": 30
+  },
+  {
+    "id": "osm-3",
+    "name": "Big Banyan Tree",
+    "tags": { "natural": "tree" },
+    "description": "large banyan tree used as a local meeting point",
+    "lat": -1.2919,
+    "lon": 36.8217,
+    "distance": 45
+  }
+]

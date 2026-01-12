@@ -1,0 +1,13 @@
+{
+  "name": "lastmile-handshake-example",
+  "version": "1.0.0",
+  "description": "Runnable handshake example with a small OSM mock and tests",
+  "main": "handshake.js",
+  "scripts": {
+    "test": "jest --color"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "29.7.0"
+  }
+}
